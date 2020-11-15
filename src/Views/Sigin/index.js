@@ -12,7 +12,7 @@ import {
 import logo from '../../assets/logo.png';
 import logo_name from '../../assets/Logo-orama.png';
 import Button from '../../Components/Button';
-const Sigin = () => {
+const Sigin = ({navigation}) => {
   return (
     <Container>
       <ContentIMG>
@@ -32,7 +32,9 @@ const Sigin = () => {
           <Text style={{margin: 5, color: '#6EA637'}}>ou</Text>
           <Line />
         </View>
-        <Button bg="#6EA637">Criar uma conta</Button>
+        <Button bg="#6EA637"  onPress={() => navigation.navigate('PerfilDiscovery')}>
+          Criar uma conta
+        </Button>
       </ContentActions>
     </Container>
   );

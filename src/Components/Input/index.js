@@ -1,15 +1,9 @@
 import React from 'react';
 
-import { Text } from 'react-native';
+import {Input} from './styles';
 
-import { Container } from './styles';
-
-const Input = () => {
-  return (
-    <Container>
-      <Text>Input</Text>
-    </Container>
-  );
+const Input = ({placeholder}) => {
+  return <Input placeholder={placeholder} />;
 };
 
 export default Input;
